@@ -294,26 +294,46 @@
 
 <style>
 	:global(.prose h2) {
-		@apply mt-12 mb-6 text-3xl font-bold text-[color:var(--dark)];
+		margin-top: 3rem;
+		margin-bottom: 1.5rem;
+		font-size: 1.875rem;
+		font-weight: 700;
+		color: var(--dark);
 	}
 
 	:global(.prose h3) {
-		@apply mt-8 mb-4 text-2xl font-bold text-[color:var(--dark)];
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--dark);
 	}
 
 	:global(.prose p) {
-		@apply mb-6 text-lg leading-relaxed text-muted-foreground;
+		margin-bottom: 1.5rem;
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		color: hsl(var(--muted-foreground));
 	}
 
 	:global(.prose ul) {
-		@apply my-6 ml-6 space-y-3;
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+		margin-left: 1.5rem;
+	}
+
+	:global(.prose ul > * + *) {
+		margin-top: 0.75rem;
 	}
 
 	:global(.prose li) {
-		@apply text-lg leading-relaxed text-muted-foreground;
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		color: hsl(var(--muted-foreground));
 	}
 
 	:global(.prose strong) {
-		@apply font-semibold text-foreground;
+		font-weight: 600;
+		color: hsl(var(--foreground));
 	}
 </style>
